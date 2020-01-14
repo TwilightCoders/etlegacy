@@ -245,7 +245,6 @@ Install:
 
 Then brew the following packages in the terminal app:
 
-    $ brew cask install xquartz
     $ brew install gnu-sed cmake glew sdl2 minizip jpeg-turbo curl lua libogg libvorbis theora freetype sqlite openal-soft automake autoconf libtool
 
 * option A: **easybuild**
