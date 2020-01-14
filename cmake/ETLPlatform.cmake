@@ -80,7 +80,7 @@ if(UNIX)
 		set(CMAKE_OSX_DEPLOYMENT_TARGET "10.7")
 		execute_process(COMMAND xcrun -show-sdk-path OUTPUT_VARIABLE XCODE_SDK_PATH OUTPUT_STRIP_TRAILING_WHITESPACE)
 		set(CMAKE_OSX_SYSROOT "${XCODE_SDK_PATH}")
-		set(CMAKE_CXX_FLAGS "-isysroot ${CMAKE_OSX_SYSROOT} ${CMAKE_CXX_FLAGS}")
+		set(CMAKE_CXX_FLAGS "-isysroot ${CMAKE_OSX_SYSROOT} -stdlib=libc++ ${CMAKE_CXX_FLAGS}")
 
 		if(BUILD_CLIENT)
 			set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -framework Quartz -framework AudioToolbox -framework AudioUnit -framework Carbon -framework CoreAudio -framework ForceFeedback -liconv")

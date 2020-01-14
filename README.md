@@ -246,15 +246,13 @@ Install:
 Then brew the following packages in the terminal app:
 
     $ brew cask install xquartz
-    $ brew install --universal gnu-sed cmake glew sdl2 minizip jpeg-turbo curl lua libogg libvorbis theora freetype sqlite openal-soft
-
-The --universal flag ensures both 32bit and 64bit libraries are installed. Although your system curl library supports both architectures, you also need to install its headers.
+    $ brew install gnu-sed cmake glew sdl2 minizip jpeg-turbo curl lua libogg libvorbis theora freetype sqlite openal-soft automake autoconf libtool
 
 * option A: **easybuild**
 
 In Terminal, run:
 
-    $ ./easybuild.sh
+    $ ./easybuild.sh -64
 
 This will put an 'etlegacy' folder into your user folder.
 
